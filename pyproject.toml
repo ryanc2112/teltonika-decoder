@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "teltonika-decoder"
+version = "0.1.0"
+description = "Lightweight, zero-dependency decoder for Teltonika GPS tracker packets (Codec 8, 8E, 16, 12, 13, 14)"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Ryan Campbell" }]
+requires-python = ">=3.9"
+keywords = ["teltonika", "codec8", "codec8e", "gps", "telematics", "avl", "fmb", "fmc"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Communications",
+]
+
+[project.scripts]
+teltonika-decode = "teltonika.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
