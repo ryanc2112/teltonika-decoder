@@ -1,5 +1,7 @@
 # teltonika-decoder
 
+[![tests](https://github.com/ryanc2112/teltonika-decoder/actions/workflows/test.yml/badge.svg)](https://github.com/ryanc2112/teltonika-decoder/actions/workflows/test.yml)
+
 A small Python decoder for packets from Teltonika GPS trackers (FMB, FMC, FMM, FMP and similar). It uses only the standard library: one file does the parsing, and a CLI sits on top.
 
 | Supported | |
